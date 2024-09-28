@@ -324,6 +324,8 @@ class ExampleOperator(BaseOperator):
                 )
                 session_local.add(new_record)
             session_local.commit()
+
+            print('Data loaded successfully')
         except Exception as e:
             print(e)
             return None
